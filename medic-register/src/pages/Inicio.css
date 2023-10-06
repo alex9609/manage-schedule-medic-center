@@ -1,0 +1,27 @@
+.container-inicio{
+    width: 900px;
+}
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.medicoGeneral{
+    width: 180px;
+    height: 220px;
+    border-radius: 30%;
+}
+
+.especialista{
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+}
+
+.laboratorio{
+    width: 200px;
+    height: 220px;
+    border-radius: 30%;
+}
