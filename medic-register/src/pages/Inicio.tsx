@@ -10,21 +10,21 @@ const Inicio = () => {
 
     const navigate = useNavigate()
 
-    const medicoSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+    const medicoSubmit = () => {
+        //e.preventDefault();
         alert("Revisando disponibilidad de Medico general")
         navigate("/inicio/MedicoGeneral")
 
     }
 
-    const especialistaSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+    const especialistaSubmit = () => {
+        //e.preventDefault();
         alert("Consultando Especialistas")
         navigate("/inicio/Especialista")
     }
 
-    const laboratorioSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+    const laboratorioSubmit = () => {
+        //e.preventDefault();
         alert("Ingresando al Laboratorio")
         navigate("/inicio/Laboratorio")
     }
@@ -49,7 +49,7 @@ const Inicio = () => {
                         <CardCitaMedica titulo="Médico General"
                             descripcion="¡Aquí puedes agendar tus citas médicas para resolver tus preocupaciones de salud!"
                             nombreBoton="Agendar Médico"
-                            funcion={() => medicoSubmit}
+                            funcion={medicoSubmit}
 
                         />
                     </div>
@@ -58,7 +58,7 @@ const Inicio = () => {
                         <CardCitaMedica titulo="Especialista"
                             descripcion="¡Reserva tus consultas con nuestros especialistas altamente capacitados para abordar tus necesidades médicas específicas!"
                             nombreBoton="Agendar especialista"
-                            funcion={() => especialistaSubmit}
+                            funcion={especialistaSubmit}
                         />
                     </div>
                     <div>
@@ -66,7 +66,7 @@ const Inicio = () => {
                         <CardCitaMedica titulo="Laboratorio"
                             descripcion="Consulta tus resultados de laboratorio de manera rápida y sencilla reservando aquí."
                             nombreBoton="Consultar examenes"
-                            funcion={() => laboratorioSubmit}
+                            funcion={laboratorioSubmit}
                         />
                     </div>
                 </div>
