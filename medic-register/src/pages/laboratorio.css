@@ -1,0 +1,120 @@
+.tabla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px; /* Ancho máximo deseado */
+    margin: 0 auto;
+  }
+  
+  /* Encabezado de la tabla */
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  /* Celda del encabezado */
+  th {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Estilo de las filas pares */
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilo de las filas impares */
+  tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  /* Celda de datos */
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  /* Resaltar celdas de resultado */
+  td:nth-child(3) {
+    font-weight: bold;
+    color: #e74c3c;
+  }
+
+  .icon-download{
+    font-size: 25px;
+    text-align: center;
+    color: #0B3142;
+  }
+  
+  .icon{
+    cursor: pointer;
+  }
+  
+  .consultadiv{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 120px;
+    border: #0B3142 solid;
+    border-radius: 5px;
+
+  }
+
+  .botones{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .consulta-examen{
+    background-color: rgb(12, 95, 12);
+    margin: 10px;
+    height: 40px;
+  }
+
+  .consulta-examen:hover{
+    background-color: rgb(11, 124, 11);
+    height: 45px;
+    margin: 10px;
+  }
+  
+  .limpiar-examen{
+    background-color: #e74c3c;
+    margin: 10px;
+    height: 40px;
+}
+
+.limpiar-examen:hover{
+    background-color: #d33726;
+    margin: 10px;
+    height: 45px;
+}
+
+.label{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    color: #0B3142;
+}
+  
+.cedula-input{
+    border: 2px solid black;
+    height: 30px;
+    background-color: #f9f9f9;
+    color: #0B3142;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cedula-input:focus{
+    border: 2px solid red;
+    outline: none;
+}

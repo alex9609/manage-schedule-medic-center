@@ -1,0 +1,19 @@
+.seleccionado  {
+    border:#38a6aa solid;
+    border-radius: 10px;
+
+}
+
+.seleccionadoS {
+    border:#38a6aa solid;
+    border-radius: 10px;
+}
+
+.seleccionadoR {
+    border:#38a6aa solid;
+    border-radius: 10px;
+}
+
+.disable{
+    display: none;
+}
